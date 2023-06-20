@@ -4,6 +4,7 @@
  * Description: printing using printf function
  * Return: Always end with 0
  */
-int main(void) 
+int main(void); 
 { printf("with proper grammer, but the outcome is a piece of art,");
 return (0);
+}
