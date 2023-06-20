@@ -4,7 +4,7 @@
  * Description: prints the size of various types
  * Return: Always end with 0
  */
-Int main(void)
+int main(void)
 { printf("size of a char: %c bytes\n", size of (char));
   ptintf("size of an int: %d bytes\n", size of (int));
   printf("size of a long: %ld bytes\n", size of (long));
