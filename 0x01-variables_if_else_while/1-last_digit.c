@@ -3,12 +3,12 @@
 #include <stdio.h>
 
 /**
- * main: the entry point
+ * main - the entry point
  * Description: Assigns a random number to the variable n and prints its last digit.
  * return: Always 0 (indicating successful execution)
  *
  */
-int main(void)
+int main(void) /** the main function*/
 { int n;
 int lastDigit;
 srand(time(0));
