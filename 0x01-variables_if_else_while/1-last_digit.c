@@ -4,11 +4,15 @@
 
 /**
  * main - the entry point
- * Description: Assigns a random number to the variable n and prints its last digit.
+ * Description: Assigns a random number to the variable
  * return: Always 0 (indicating successful execution)
  *
  */
-int main(void) /** the main function*/
+int main(void)
+/**
+* the main function
+*
+*/
 { int n;
 int lastDigit;
 srand(time(0));
