@@ -4,8 +4,8 @@
 
 /**
  * main- the entry point
- * Description: assigning random numbers
- * return: set to 0 (success)
+ * Description: Assigns a random number to the variable n and prints its last digit.
+ * return: Always 0 (indicating successful execution)
  */
 int main(void)
 { int n;
