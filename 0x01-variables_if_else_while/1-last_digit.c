@@ -5,7 +5,7 @@
 /**
  * main- the entry point
  * Description: assigning random numbers
- * return: 0 for a sucessful execution
+ * return: set to 0 (success)
  */
 int main(void)
 { int n;
