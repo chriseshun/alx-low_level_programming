@@ -9,10 +9,6 @@
  *
  */
 int main(void)
-/**
-* the main function
-*
-*/
 { int n;
 int lastDigit;
 srand(time(0));
