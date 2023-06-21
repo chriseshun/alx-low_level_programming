@@ -5,7 +5,7 @@
 /**
  * main - the entry point
  * Description: Assigns a random number to the variable
- * return: Always 0 (indicating successful execution)
+ * Return: Always 0 (indicating successful execution)
  *
  */
 int main(void)
