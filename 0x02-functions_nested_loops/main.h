@@ -1,9 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 /**
- * Return: always end with 0
+ * main - entry point
+ * Description: print _putchar
+ * Return: Always 0 (success)
  */
-
 int _putchar(char c);
 
-#endif /* MAIN_H */
+#endif

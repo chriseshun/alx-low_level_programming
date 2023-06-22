@@ -2,7 +2,7 @@
 /**
  * main - entry point
  * Description: print putchar
- * Return : always end with 0
+ * Return: always end with 0
  */
 int main(void)
 {
