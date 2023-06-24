@@ -3,15 +3,15 @@
  * print_times_table - prints the n times table
  * @num: number of the timess table
  */
-void print_times_table(int n)
+void print_times_table(int num)
 {
 	int i, j, k;
 
 	if (num >= 0 && num <= 15)
 	{
-		for (i = 0; i <= n; i++)
+		for (i = 0; i <= num; i++)
 		{
-			for (j = 0; j <= n; j++)
+			for (j = 0; j <= num; j++)
 			{
 				k = j * i;
 				if (j == 0)
