@@ -8,22 +8,35 @@
  */
 int main(void)
 {
-	int d1, d2;
+	int c, fD, sD, tD;
 
-	for (d1 = 0; d1 < 100; d1++)
+	for (c = 48; c <= 57; c++)
 	{
-		for (d2 = d1; d2 < 100; d2++)
+		for (fD = 48; fD <= 57; fD++)
 		{
-			putchar('0' + (d1 / 10));
-			putchar('0' + (d1 % 10));
-			putchar(' ');
-			putchar('0' + (d2 / 10));
-			putchar('0' + (d2 % 10));
-
-			if (d1 != 99 || d2 != 99)
+			for (sD = 48; sD <= 57; sD++)
 			{
-				putchar(',');
-				putchar(' ');
+				for (tD = 48; tD <= 57; tD++)
+				{
+					if (((sD + tD) > (c + fD) &&  sD >= c) || c < sD)
+					{
+						putchar(c);
+						putchar(fD);
+						putchar(' ');
+						putchar(sD);
+						putchar(tD);
+
+					if (c + fD + sD + tD == 227 && c == 57)
+					{
+					break;
+					}
+					else
+					{
+					putchar(',');
+					putchar(' ');
+					}
+					}
+				}
 			}
 		}
 	}
