@@ -7,15 +7,15 @@
  * 0 and prints 0 if n is zero
  * -1 and prints - if n is less than zero
  */
-int print_sign(int num){
+int print_sign(int num)
+{
 if (num > 0){
 _putchar('+');
-return 1;
-} else if (num == 0){
-_putchar(48);
-return 0;
-} else if (num < 0){
+return (1);}
+else if (num == 0){
+_putchar('0');
+return (0);}
+else {
 _putchar('-');
-}
-return -1;
+return (-1);}
 }
