@@ -9,15 +9,22 @@
  */
 int main(void)
 {
-	int j, sum = 0;
+    int fib[50];
+    int i;
 
-	for (j = 0; j < 1024; j++)
-	{
-		if ((j % 3) == 0 || (j % 5) == 0)
-			sum += j;
-	}
+    fib[0] = 1;
+    fib[1] = 2;
 
-	printf("%d\n", sum);
+    for (i = 2; i < 50; i++)
+    {
+        fib[i] = fib[i - 1] + fib[i - 2];
+    }
 
-	return (0);
+    for (i = 0; i < 49; i++)
+    {
+        printf("%d, ", fib[i]);
+    }
+    printf("%d\n", fib[49]);
+
+    return 0;
 }
