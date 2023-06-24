@@ -6,7 +6,6 @@
  * Descriptoin: prints all possible differnt combinations of two digits
  * Return: set at 0 
  */
-
 int main(void)
 {
 	int d1, d2;
@@ -15,11 +14,11 @@ int main(void)
 	{
 		for (d2 = d1; d2 < 100; d2++)
 		{
-			putchar((d1 / 10) + '0');
-			putchar((d1 % 10) + '0');
+			putchar('0' + (d1 / 10));
+			putchar('0' + (d1 % 10));
 			putchar(' ');
-			putchar((d2 / 10) + '0');
-			putchar((d2 % 10) + '0');
+			putchar('0' + (d2 / 10));
+			putchar('0' + (d2 % 10));
 
 			if (d1 != 99 || d2 != 99)
 			{
@@ -33,4 +32,3 @@ int main(void)
 
 	return (0);
 }
-
