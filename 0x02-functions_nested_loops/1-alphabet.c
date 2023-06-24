@@ -4,13 +4,18 @@
  * description: print alphabet in lowercase
  * Return: void
  */
+int main(void)
+{
+print_alphabet();
+return 0;
+}
+
 void print_alphabet(void)
 {
-char letter ='a';
-while (letter <= 'z')
+char letter;
+for (letter = 'a'; letter <= 'z'; letter++)
 {
-_putchar(letter);
-letter++;
+putchar(letter);
 }
-_putchar('\n');
+putchar('\n');
 }
