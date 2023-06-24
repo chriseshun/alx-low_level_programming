@@ -11,10 +11,11 @@ for (row = 0; row < 10; row++)
 for (column = 0; column < 10; column++)
 {
 product = column * row;
-if (column == 0) {
+if (column == 0)
+{
 _putchar(product + '0');
 }
-if (product < 10 && column != 0) 
+if (product < 10 && column != 0)
 {
 _putchar(',');
 _putchar(' ');
