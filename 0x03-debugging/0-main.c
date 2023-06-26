@@ -1,18 +1,18 @@
+User
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Description: Function that prints if an integer is positive or negative
- *
- * Return: Always 0 (Success)
- */
+* main - function that prints if integer is positive or negative
+* Description: prints integer 
+* Return: Always end with 0
+*/
+
 int main(void)
 {
-        int j;
+int j;
 
-        j = 0;
-        positive_or_negative(j);
+j = 0;
+positive_or_negative(j);
 
-        return (0);
+return (0);
 }
