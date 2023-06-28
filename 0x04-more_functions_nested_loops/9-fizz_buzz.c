@@ -8,27 +8,31 @@
  */
 int main(void)
 {
-int i;
-for (i = 1; i <= 100; i++)
+int num;
+
+for (num = 1; num <= 100; num++)
 {
-if (i % 3 == 0 && i % 5 != 0)
+if (num % 3 == 0 && num % 5 != 0)
 {
-printf("FizzBuzz ");
+printf(" Fizz");
 }
-else if (i % 3 != 0)
+else if (num % 5 == 0 && num % 3 != 0)
 {
-printf("Fizz ");
+printf(" Buzz");
 }
-else if (i % 5 == 0)
+else if (num % 3 == 0 && num % 5 == 0)
 {
-printf("Buzz ");
+printf(" FizzBuzz");
+}
+else if (num == 1)
+{
+printf("%d", num);
 }
 else
 {
-printf("%d ", i);
+printf(" %d", num);
 }
 }
-
 printf("\n");
 
 return (0);
