@@ -6,13 +6,16 @@
  *
  * Return: Always with 0.
  */
-int main(void)
+int main()
 {
-    char c;
-
-    c = '0';
-    printf("%c: %d\n", c, _isdigit(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isdigit(c));
-    return (0);
+char ch = '5';
+if (_isdigit(ch))
+{
+printf("The character is a digit.\n");
+}
+else
+{
+printf("The character is not a digit.\n");
+}
+return (0);
 }
