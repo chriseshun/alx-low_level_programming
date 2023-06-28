@@ -8,5 +8,8 @@
 */
 int _isdigit(int c)
 {
-return (ord(c) >= ord('0') && ord(c) <= ord('9'));
+    if (c >= '0' && c <= '9')
+        return 1;
+    else
+        return 0;
 }
