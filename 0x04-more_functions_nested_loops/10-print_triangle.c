@@ -4,26 +4,25 @@
  * print_number - prints a triangle
  * @size: size to be printed
  */
-void print_triangle(int size) 
+void print_triangle(int size)
 {
-if (size <= 0) 
+if (size <= 0)
 {
 _putchar('\n');
 }
 else
 {
-int n, m;
-for (n = 1; n <= size; n++) 
+int h, b;
+for (h = 1; h <= size; h++)
 {
-for (m = n; m < size; m++) 
+for (b = h; b < size; b++)
 {
 _putchar(' ');
 }
-for (m = 1; m <= n; m++) 
+for (b = 1; b <= h; b++)
 {
 _putchar('#');
 }
 _putchar('\n');
-}
-}
+}}
 }
