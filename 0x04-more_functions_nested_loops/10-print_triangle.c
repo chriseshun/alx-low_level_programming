@@ -1,5 +1,6 @@
 #include "main.h"
 /**
+ * main - entry point
  * print_number - prints a triangle
  * @size: size to be printed
  */
@@ -9,7 +10,8 @@ if (size <= 0)
 {
 _putchar('\n');
 }
-else {
+else
+{
 int n, m;
 for (n = 1; n <= size; n++) 
 {
