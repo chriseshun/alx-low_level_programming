@@ -1,6 +1,5 @@
 #include "main.h"
 /**
- * main - entry point
  * print_number: prints a triangle
  * @size: size to be printed
  */
