@@ -12,11 +12,11 @@ int sign = 1;
 int isNumber = 0;
 while (str[index])
 {
-if (str[index] == '-')
+if (str[index] == 45)
 {
 sign *= -1;
 }
-while (str[index] >= '0' && str[index] <= '9')
+while (str[index] >= 48 && str[index] <= 57)
 {
 isNumber = 1;
 number = (number * 10) + (str[index] - '0');
