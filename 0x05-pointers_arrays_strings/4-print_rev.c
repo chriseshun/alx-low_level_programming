@@ -3,20 +3,20 @@
 /**
 *print_rev - prints a string in reverse
 *
-*@s: the string to be printed in rev
+*@str: the string to be printed in rev
 */
 
-void print_rev(char *s)
+void print_rev(char *str)
 {
-	int h, t;
+	int n, m;
 
-	t = 0;
-	while (s[t] != '\0')
-		t++;
+	m = 0;
+	while (str[m] != '\0')
+		m++;
 
-	for (h = t - 1; h >= 0; h--)
+	for (n = m - 1; n >= 0; n--)
 	{
-		_putchar(s[h]);
+		_putchar(str[n]);
 	}
 	_putchar('\n');
 }
