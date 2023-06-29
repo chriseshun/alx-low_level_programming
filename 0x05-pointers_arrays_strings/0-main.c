@@ -11,8 +11,8 @@ int main(void)
     int m;
 
     m = 402;
-    printf("n=%d\n", m);
+    printf("m=%d\n", m);
     reset_to_98(&m);
-    printf("n=%d\n", m);
+    printf("m=%d\n", m);
     return (0);
 }
