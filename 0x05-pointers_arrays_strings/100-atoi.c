@@ -4,30 +4,35 @@
  * @str: Pointer to convert
  * Return : integer
  */
-int _atoi(char *str)
+int _atoi(char *s)
 {
-int index = 0;
-unsigned int number = 0;
-int sign = 1;
-int isNumber = 0;
-while (str[index])
-{
-if (str[index] == 45)
-{
-sign *= -1;
-}
-while (str[index] >= 48 && str[index] <= 57)
-{
-isNumber = 1;
-number = (number * 10) + (str[index] - '0');
-index++;
-}
-if (isNumber == 1)
-{
-break;
-}
-index++;
-}
-number *= sign;
-return (number);
+	int c = 0;
+	unsigned int ni = 0;
+	int min = 1;
+	int isi = 0;
+
+	while (s[c])
+	{
+		if (s[c] == 45)
+		{
+			min *= -1;
+		}
+
+		while (s[c] >= 48 && s[c] <= 57)
+		{
+			isi = 1;
+			ni = (ni * 10) + (s[c] - '0');
+			c++;
+		}
+
+		if (isi == 1)
+		{
+			break;
+		}
+
+		c++;
+	}
+
+	ni *= min;
+	return (ni);
 }
