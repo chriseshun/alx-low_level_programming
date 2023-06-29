@@ -1,16 +1,12 @@
 #include "main.h"
 
 /**
-*reset_to_98 -  updates pointer
-*
-*@n: int to check
-*
-*Return: 0 (success)
-*/
-
-void reset_to_98(int *m)
+ * reset_to_98 - takes a pointer and updates the value it points to
+ * @num_ptr: pointer to an integer
+ *
+ * Return: void
+ */
+void reset_to_98(int *num_ptr)
 {
-
-*m = 98;
-
+    *num_ptr = 98;
 }
