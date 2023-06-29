@@ -24,5 +24,6 @@ for (b = 1; b <= h; b++)
 _putchar('#');
 }
 _putchar('\n');
-}}
+}
+}
 }
