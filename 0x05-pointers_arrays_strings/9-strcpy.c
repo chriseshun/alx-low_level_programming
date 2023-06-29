@@ -7,11 +7,9 @@
  */
 char *_strcpy(char *destination, char *source)
 {
-    int index;
-
-    for (index = 0; source[index] != '\0'; index++)
-        destination[index] = source[index];
-
-    destination[index] = '\0';
-    return (destination);
+int index;
+for (index = 0; source[index] != '\0'; index++)
+destination[index] = source[index];
+destination[index] = '\0';
+return (destination);
 }
