@@ -26,5 +26,5 @@ dest++;
 n--;
 }
 
-return dest_start;
+return (dest_start);
 }
