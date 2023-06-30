@@ -22,7 +22,8 @@ if (*ptr == uppercase[i])
 {
 *ptr = rot13_uppercase[i];
 break;
-} else if (*ptr == lowercase[i])
+}
+else if (*ptr == lowercase[i])
 {
 *ptr = rot13_lowercase[i];
 break;
