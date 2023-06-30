@@ -7,30 +7,26 @@
  */
 char *rot13(char *str)
 {
-    char *ptr = str;
-    char *uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    char *lowercase = "abcdefghijklmnopqrstuvwxyz";
-    char *rot13_uppercase = "NOPQRSTUVWXYZABCDEFGHIJKLM";
-    char *rot13_lowercase = "nopqrstuvwxyzabcdefghijklm";
-    int i;
+char *ptr = str;
+int i;
 
-    while (*ptr != '\0')
-    {
-        for (i = 0; i < 26; i++)
-        {
-            if (*ptr == uppercase[i])
-            {
-                *ptr = rot13_uppercase[i];
-                break;
-            }
-            else if (*ptr == lowercase[i])
-            {
-                *ptr = rot13_lowercase[i];
-                break;
-            }
-        }
-        ptr++;
-    }
+while (*ptr != '\0')
+{
+for (i = 0; i < 13; i++)
+{
+if ((*ptr >= 'A' && *ptr <= 'M') || (*ptr >= 'a' && *ptr <= 'm'))
+{
+*ptr += 13;
+break;
+}
+else if ((*ptr >= 'N' && *ptr <= 'Z') || (*ptr >= 'n' && *ptr <= 'z'))
+{
+*ptr -= 13;
+break;
+}
+}
+ptr++;
+}
 
-    return str;
+return (str);
 }
