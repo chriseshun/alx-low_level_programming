@@ -6,25 +6,26 @@
  *
  * Return: Pointer to the encoded string
  */
-char *rot13(char *s)
-{
-int m;
-int n;
+char *rot13(char *str) {
+char *ptr = str;
+char *uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char *lowercase = "abcdefghijklmnopqrstuvwxyz";
+char *rot13_uppercase = "NOPQRSTUVWXYZABCDEFGHIJKLM";
+char *rot13_lowercase = "nopqrstuvwxyzabcdefghijklm";
+int i;
 
-char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-
-char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-
-for (m = 0; s[m] != '\0'; m++)
-{
-for (n = 0; n < 52; n++)
-{
-if (s[m] == data1[n])
-{
-s[m] = datarot[n];
+while (*ptr != '\0') {
+for (i = 0; i < 26; i++) {
+if (*ptr == uppercase[i]) {
+*ptr = rot13_uppercase[i];
+break;
+} else if (*ptr == lowercase[i]) {
+*ptr = rot13_lowercase[i];
 break;
 }
 }
+ptr++;
 }
-return (s);
+
+return str;
 }
