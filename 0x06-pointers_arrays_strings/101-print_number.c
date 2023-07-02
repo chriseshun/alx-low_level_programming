@@ -3,8 +3,9 @@
 /**
 *print_number - prints intergers
 *@n: integer parameter
-*Return: Always end with 0
+*Return: 0
 */
+
 void print_number(int n)
 {
 unsigned int n1;
