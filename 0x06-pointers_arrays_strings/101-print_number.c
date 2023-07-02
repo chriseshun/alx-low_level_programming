@@ -2,20 +2,20 @@
 
 /**
 *print_number - prints intergers
-*@n: integer parameter
+*@m: integer parameter
 *Return: 0
 */
 
-void print_number(int n)
+void print_number(int m)
 {
 unsigned int n1;
 
-n1 = n;
+n1 = m;
 
-if (n < 0)
+if (m < 0)
 {
 _putchar('-');
-n1 = -n;
+n1 = -m;
 }
 
 if (n1 / 10 != 0)
