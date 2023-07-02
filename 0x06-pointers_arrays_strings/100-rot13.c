@@ -2,32 +2,29 @@
 #include <stdio.h>
 /**
  * rot13 - Encodes a string using ROT13
- * @str: Pointer to the string to be encoded
+ * @s: Pointer to the string to be encoded
  *
  * Return: Pointer to the encoded string
  */
-char *rot13(char *str)
+char *rot13(char *s)
 {
-char *ptr = str;
-int i;
+int m;
+int n;
 
-while (*ptr != '\0')
+char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+for (m = 0; s[m] != '\0'; m++)
 {
-for (i = 0; i < 13; i++)
+for (n = 0; n < 52; n++)
 {
-if ((*ptr >= 'A' && *ptr <= 'M') || (*ptr >= 'a' && *ptr <= 'm'))
+if (s[m] == data1[n])
 {
-*ptr += 13;
+s[m] = datarot[n];
 break;
 }
-else if ((*ptr >= 'N' && *ptr <= 'Z') || (*ptr >= 'n' && *ptr <= 'z'))
-{
-*ptr -= 13;
-break;
 }
 }
-ptr++;
-}
-
-return (str);
+return (s);
 }
