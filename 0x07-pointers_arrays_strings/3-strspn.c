@@ -24,7 +24,8 @@ break;
 }
 a++;
 }
-if (is_accept) {
+if (is_accept)
+{
 count++;
 s++;
 }
