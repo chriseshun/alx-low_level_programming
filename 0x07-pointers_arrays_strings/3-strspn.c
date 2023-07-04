@@ -10,23 +10,24 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int length = 0;
-int found;
-while (*s != '\0')
+unsigned int count = 0;
+int is_accept = 1;
+while (*s && is_accept)
 {
-found = 0;
-for (char *a = accept; *a != '\0'; a++)
-{
+char *a = accept;
+is_accept = 0;
+while (*a) {
 if (*s == *a)
 {
-found = 1;
+is_accept = 1;
 break;
 }
+a++;
 }
-if (found == 0)
-return (length);
-length++;
+if (is_accept) {
+count++;
 s++;
 }
-return (length);
+}
+return (count);
 }
