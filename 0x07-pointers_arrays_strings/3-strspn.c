@@ -5,6 +5,7 @@
  * _strspn - Gets the length of a prefix substring.
  * @s: The string to search.
  * @accept: The string of accepted bytes.
+ *
  * Return: The number of bytes in the initial segment 
  */
 unsigned int _strspn(char *s, char *accept)
