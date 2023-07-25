@@ -8,16 +8,13 @@
  */
 int is_prime_check(int n, int i)
 {
-    if (n <= 1)
-        return (0);
-
-    if (i * i > n)
-        return (1);
-
-    if (n % i == 0)
-        return (0);
-
-    return (is_prime_check(n, i + 1));
+if (n <= 1)
+return (0);
+if (i * i > n)
+return (1);
+if (n % i == 0)
+return (0);
+return (is_prime_check(n, i + 1));
 }
 
 /**
@@ -28,5 +25,5 @@ int is_prime_check(int n, int i)
  */
 int is_prime_number(int n)
 {
-    return (is_prime_check(n, 2));
+return (is_prime_check(n, 2));
 }
