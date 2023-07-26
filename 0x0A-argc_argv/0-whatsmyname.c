@@ -8,9 +8,9 @@
  * @argv: is the argument vector
  * Return: 0 (success)
  */
-int main(int num_arguments, char *argument_values[])
+int main(int argc, char *argv[])
 {
-(void)num_arguments;
-printf("%s\n", *(argument_values + 0));
+(void)argc;
+printf("%s\n", argv[0]);
 return (0);
 }
