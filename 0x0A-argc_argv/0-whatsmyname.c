@@ -15,4 +15,3 @@ int main(int num_arguments, char *argument_values[])
 printf("%s\n", *(argument_values + 0));
 return (0);
 }
-
