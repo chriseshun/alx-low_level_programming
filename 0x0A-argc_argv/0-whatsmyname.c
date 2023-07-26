@@ -6,9 +6,8 @@
  * main - print name of program
  * @argc: is the argument count
  * @argv: is the argument vector
- * Return: Always return 0
+ * Return: 0 (success)
  */
-
 int main(int num_arguments, char *argument_values[])
 {
 (void)num_arguments;
