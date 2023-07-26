@@ -8,12 +8,12 @@
  *
  * Return: Always 0 (success).
  */
-int main(int ac, char *av[])
+int main(int argc, char *argv[])
 {
 int i;
-for (i = 0; i < ac; i++)
+for (i = 0; i < argc; i++)
 {
-printf("%s\n", av[i]);
+printf("%s\n", argv[i]);
 }
 return (0);
 }
