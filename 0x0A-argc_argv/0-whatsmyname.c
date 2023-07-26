@@ -1,16 +1,18 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * print_program_name - Prints the program name.
- * @name: The name of the program.
+ * main - print name of program
+ * @argc: is the argument count
+ * @argv: is the argument vector
+ * Return: Always return 0
  */
-void print_program_name(char *name)
+
+int main(int num_arguments, char *argument_values[])
 {
-printf("%s\n", name);
-}
-int main(int argc, char *argv[])
-{
-print_program_name(argv[0]);
+(void)num_arguments;
+printf("%s\n", *(argument_values + 0));
 return (0);
 }
+
