@@ -1,20 +1,20 @@
-_putchar.o
-_islower.o
-_isalpha.o
-_abs.o
-_isupper.o
-_isdigit.o
-_strlen.o
-_puts.o
-_strcpy.o
-_atoi.o
-_strcat.o
-_strncat.o
-_strncpy.o
-_strcmp.o
-_memset.o
-_memcpy.o
-_strchr.o
-_strspn.o
-_strpbrk.o
-_strstr.o
+!<arch>
+_abs.o/         0           0     0     644     0         `
+_atoi.o/        0           0     0     644     0         `
+_ialpha.o/      0           0     0     644     0         `
+_isdigit.o/     0           0     0     644     0         `
+_islower.o/     0           0     0     644     0         `
+_isupper.o/     0           0     0     644     0         `
+_memcpy.o/      0           0     0     644     0         `
+_putchar.o/     0           0     0     644     0         `
+_puts.o/        0           0     0     644     0         `
+_*strcat.o/     0           0     0     644     0         `
+_strchr.o/      0           0     0     644     0         `
+_strcmp.o/      0           0     0     644     0         `
+*_strcpy.o/     0           0     0     644     0         `
+_strlen.o/      0           0     0     644     0         `
+_strncat.o/     0           0     0     644     0         `
+_strncpy.o/     0           0     0     644     0         `
+_strpbrk.o/     0           0     0     644     0         `
+_strspn.o/      0           0     0     644     0         `
+_strstr.o/      0           0     0     644     0         `
