@@ -6,7 +6,6 @@
  * main - entry
  * @argc: number of input
  * @argv: array of string values
- * 
  * Return: 0 success
  */
 
