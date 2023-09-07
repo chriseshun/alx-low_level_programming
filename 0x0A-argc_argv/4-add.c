@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -10,43 +9,35 @@
  *
  * Return: 0 for success, 1 for error
  */
-
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+    int sum = 0;
 
-	if (argc < 2)
-	{
-		printf("0\n");
-		return (0);
-	}
+    if (argc == 1)
+    {
+        printf("0\n");
+        return (0);
+    }
 
-	for (i = 1; i < argc; i++)
-	{
-		char *arg = argv[i];
-		int j;
+    for (int i = 1; i < argc; i++)
+    {
+        char *number_str = argv[i];
 
-		for (j = 0; arg[j] != '\0'; j++)
-		{
-			if (!isdigit(arg[j]))
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
+        for (int j = 0; number_str[j] != '\0'; j++)
+        {
+            if (!isdigit(number_str[j]))
+            {
+                printf("Error\n");
+                return (1);
+            }
+        }
 
-		int num = atoi(arg);
+        int number = atoi(number_str);
+        sum += number;
+    }
 
-		if (num < 0)
-		{
-			printf("Error\n");
-			return (1);
-		}
+    printf("%d\n", sum);
 
-		sum += num;
-	}
-
-	printf("%d\n", sum);
-	return (0);
+    return (0);
 }
 
