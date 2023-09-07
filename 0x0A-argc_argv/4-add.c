@@ -10,6 +10,7 @@
  *
  * Return: 0 for success, 1 for error
  */
+
 int main(int argc, char *argv[])
 {
 	int i, sum = 0;
