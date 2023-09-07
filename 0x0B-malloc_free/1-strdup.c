@@ -18,7 +18,7 @@ while (str[b])
 {
 b++;
 }
-thread = malloc((sizeof(char) * b) + 1);
+thread = malloc((sizeof(char) * b) +1);
 if (thread == NULL)
 return (NULL);
 while (a < b)
