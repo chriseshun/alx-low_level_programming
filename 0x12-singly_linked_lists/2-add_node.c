@@ -15,7 +15,7 @@ while (*s)
 {
 s++;
 length++;
-}    
+}
 return (length);
 }
 
