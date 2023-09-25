@@ -5,7 +5,7 @@
  * list_len - Entry point
  * @h: Pointer
  *
- * Return : Output
+ * Return: Output
  */
 
 size_t list_len(const list_t *h)
