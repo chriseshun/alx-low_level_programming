@@ -2,10 +2,6 @@
 
 
 
-
-void checks_IO(int new, int def, char *filename, char status);
-
-
 /**
  * main - copies the content of one file to another
  * @argc: arg counter
