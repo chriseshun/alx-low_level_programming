@@ -72,6 +72,6 @@ void checks_IO(int new, int def, char *filename, char status)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 		exit(99);
 	}
-	exit(EXIT_FAILURE);
-}
+
+
 }
